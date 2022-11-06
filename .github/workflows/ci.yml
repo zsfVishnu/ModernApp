@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  Apk_size_tracker:
+  ApkSizeTracker:
     runs-on: ubuntu-latest
     name: Apk size tracker
     steps:
@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Custom action step
-        id: apk_size
+        id: apkSize
         uses: zsfVishnu/apk-size-tracker@master # Uses an action in the root directory
         with:
           flavor: 'debug'
