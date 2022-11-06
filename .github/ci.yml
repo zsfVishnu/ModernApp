@@ -1,1 +1,19 @@
+on: [push]
 
+jobs:
+  Apk size tracker:
+    runs-on: ubuntu-latest
+    name: Apk size tracker
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Custome action step
+        uses: zsfVishnu/apk-size-tracker@master # Uses an action in the root directory
+        id: apk_size
+        with:
+          flavor: 'debug'
+
+#      - name: Get the output size
+#        run: echo "The time was ${{ steps.apk_size.outputs.size }}"
