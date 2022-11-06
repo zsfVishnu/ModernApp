@@ -20,5 +20,3 @@ jobs:
         with:
           flavor: 'debug'
 
-#      - name: Get the output size
-#        run: echo "The time was ${{ steps.apk_size.outputs.size }}"
