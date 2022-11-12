@@ -18,5 +18,3 @@ jobs:
         with:
           flavor: 'debug'
           GITHUB_TOKEN: ${{ secrets.MY_SECRET }}
-
-
