@@ -14,11 +14,11 @@ jobs:
         with:
           node-version: 16
           
-#       - name: Custom action step
-#         id: apkSize
-#         uses: zsfVishnu/apk-size-tracker@master # Uses an action in the root directory
-#         with:
-#           flavor: 'debug'
+      - name: Custom action step
+        id: apkSize
+        uses: zsfVishnu/apk-size-tracker@master # Uses an action in the root directory
+        with:
+          flavor: 'debug'
 #       - run: echo {{ steps.apkSize.outputs }} > myArtifact.txt
 #       - uses: actions/upload-artifact@v3
 #         with:
@@ -26,12 +26,12 @@ jobs:
 #           path: myArtifact.txt
 
 
-      - uses: actions/checkout@v2
+      # - uses: actions/checkout@v2
 
-      - uses: actions/download-artifact@v3
-        with:
-          name: my-artifact
-
-      - name: Display structure of downloaded files
-        run: ls -R
+      # - uses: actions/download-artifact@v3
+      #  with:
+      #    name: my-artifact
+#
+ #     - name: Display structure of downloaded files
+  #      run: ls -R
 
