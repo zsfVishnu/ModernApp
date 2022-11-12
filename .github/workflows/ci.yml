@@ -16,6 +16,6 @@ jobs:
         id: apkSize
         uses: zsfVishnu/apk-size-tracker@master 
         with:
-          flavor: 'release13'
+          flavor: 'release14'
           GITHUB_TOKEN: ${{ secrets.MY_SECRET }}
 
