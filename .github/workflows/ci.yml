@@ -16,7 +16,7 @@ jobs:
           
       - name: Custom action step
         id: apkSize
-        uses: zsfVishnu/apk-size-tracker@master # Uses an action in the root directory
+        uses: zsfVishnu/apk-size-tracker@master 
         with:
           flavor: 'debug'
           GITHUB_TOKEN: ${{ secrets.MY_SECRET }}
