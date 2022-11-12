@@ -19,5 +19,3 @@ jobs:
           flavor: 'release'
           GITHUB_TOKEN: ${{ secrets.MY_SECRET }}
 
-
-
