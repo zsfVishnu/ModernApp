@@ -20,10 +20,3 @@ jobs:
         with:
           flavor: 'debug'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-#       - run: echo {{ steps.apkSize.outputs }} > myArtifact.txt
-#       - uses: actions/upload-artifact@v3
-#         with:
-#           name: my-artifact
-#           path: myArtifact.txt
