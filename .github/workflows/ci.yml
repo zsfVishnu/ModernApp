@@ -19,8 +19,8 @@ jobs:
 #           flavor: 'release23'
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: |
-              myJson = { "master_size" : 50 }
-              echo "$myJson" > sizeArtifact.json
+
+              echo { "master_size" : 50 } > sizeArtifact.json
       - uses: actions/upload-artifact@v3
         with:
           name: sizeArtifact
