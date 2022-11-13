@@ -12,14 +12,16 @@ jobs:
         with:
           node-version: 16
           
-      - name: Custom action step
-        id: apkSize
-        uses: zsfVishnu/apk-size-tracker@master 
-        with:
-          flavor: 'release23'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#       - run: echo { "master_size" :50 } > sizeArtifact.json
-#       - uses: actions/upload-artifact@v3
+#       - name: Custom action step
+#         id: apkSize
+#         uses: zsfVishnu/apk-size-tracker@master 
 #         with:
-#           name: sizeArtifact
-#           path: sizeArtifact.json
+#           flavor: 'release23'
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+              myJson = { "master_size" : 50 }
+              echo "$myJson" > sizeArtifact.json
+      - uses: actions/upload-artifact@v3
+        with:
+          name: sizeArtifact
+          path: sizeArtifact.json
