@@ -19,7 +19,6 @@ jobs:
           flavor: 'release27'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #       - run: |
-
 #               echo { \"master_size\" : 50 } > sizeArtifact.json
 #       - uses: actions/upload-artifact@v3
 #         with:
