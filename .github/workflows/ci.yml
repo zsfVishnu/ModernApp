@@ -16,7 +16,7 @@ jobs:
         id: apkSize
         uses: zsfVishnu/apk-size-tracker@master 
         with:
-          flavor: 'release27'
+          flavor: 'release28'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #       - run: |
 #               echo { \"master_size\" : 50 } > sizeArtifact.json
