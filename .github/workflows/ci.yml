@@ -1,7 +1,7 @@
 on:
   push:
       branches:
-        - main
+        - master
 
 jobs:
   ApkSizeTracker:
@@ -15,12 +15,12 @@ jobs:
         with:
           node-version: 16
           
-     - name: Upload action step
-       id: apkSize
-       uses: zsfVishnu/apk-metric-upload@main
-       with:
-         flavor: 'release23'
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload action step
+        id: apkSize
+        uses: zsfVishnu/apk-metric-upload@main
+        with:
+          flavor: 'release23'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: |
 
               echo { \"master_size\" : 50 } > sizeArtifact.json
