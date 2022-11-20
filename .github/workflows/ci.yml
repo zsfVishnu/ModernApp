@@ -19,12 +19,12 @@ jobs:
         id: apkSize
         uses: zsfVishnu/apk-metric-upload@main
         with:
-          flavor: 'release23'
+          flavor: 'release24'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: |
+#       - run: |
 
-              echo { \"master_size\" : 50 } > sizeArtifact.json
-      - uses: actions/upload-artifact@v3
-        with:
-          name: sizeArtifact
-          path: sizeArtifact.json
+#               echo { \"master_size\" : 50 } > sizeArtifact.json
+#       - uses: actions/upload-artifact@v3
+#         with:
+#           name: sizeArtifact
+#           path: sizeArtifact.json
