@@ -20,4 +20,3 @@ jobs:
         uses: zsfVishnu/apk-metric-upload@main
         with:
           flavor: 'debug'
-
