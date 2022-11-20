@@ -21,9 +21,3 @@ jobs:
         with:
           flavor: 'debug'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#       - run: |
-#               echo { \"master_size\" : 50 } > sizeArtifact.json
-#       - uses: actions/upload-artifact@v3
-#         with:
-#           name: sizeArtifact
-#           path: sizeArtifact.json
