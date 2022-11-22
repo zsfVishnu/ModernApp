@@ -16,5 +16,5 @@ jobs:
         id: apkSize
         uses: zsfVishnu/apk-size-tracker@master 
         with:
-          flavor: 'release29'
+          flavor: 'debug'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
