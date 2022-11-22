@@ -1,7 +1,4 @@
-on:
-  push:
-      branches:
-        - master
+on: [pull_request]
 
 jobs:
   ApkSizeTracker:
@@ -15,8 +12,11 @@ jobs:
         with:
           node-version: 16
           
-      - name: Upload action step
+      - name: Custom action step
         id: apkSize
-        uses: zsfVishnu/apk-metric-upload@main
+        uses: zsfVishnu/apk-size-tracker@master 
         with:
           flavor: 'debug'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
