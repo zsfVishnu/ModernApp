@@ -12,8 +12,8 @@ jobs:
 
       - name: 'Checking out current branch'
         run: |
-          git fetch origin test-3 
-          git checkout origin/test-3
+          git fetch origin test3 
+          git checkout origin/test3
 
 
 
