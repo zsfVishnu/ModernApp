@@ -24,6 +24,7 @@ jobs:
         with:
           flavor: 'debug'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          threshold: 0
 
 
 
