@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          
+
       - name: Custom action step
         id: apkSize
         uses: zsfVishnu/apk-size-tracker@master
