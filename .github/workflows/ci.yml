@@ -2,6 +2,7 @@ on: [pull_request]
 
 jobs:
   ApkSizeTracker:
+    if: ${{ github.event.label.name == 'size_delta' }}
     runs-on: ubuntu-latest
     name: Apk size tracker
     steps:
